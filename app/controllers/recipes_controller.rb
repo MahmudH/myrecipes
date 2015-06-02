@@ -40,8 +40,14 @@ class RecipesController < ApplicationController
 
   private
 
+<<<<<<< HEAD
   def recipe_params
     params.require(:recipe).permit(:name, :summary, :description, :picture)
   end
+=======
+    def recipe_params
+      params.require(:recipe).permit(:name, :summary, :description, :picture)
+    end
+>>>>>>> image-uploader
 
 end
