@@ -34,14 +34,14 @@ class RecipesController < ApplicationController
       flash[:success] = "Your recipe was updated successfully"
       redirect_to recipe_path(@recipe)
     else
-    render :edit
+      render :edit
     end
   end
 
   private
 
-    def recipe_params
-      params.require(:recipe).permit(:name, :summary, :description)
-    end
+  def recipe_params
+    params.require(:recipe).permit(:name, :summary, :description, :picture)
+  end
 
 end
